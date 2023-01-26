@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>svg/battery-svgrepo-com.svg</file>
+        <file>svg/bluetooth-svgrepo-com.svg</file>
+        <file>svg/boat-svgrepo-com.svg</file>
+        <file>svg/brush-svgrepo-com.svg</file>
+        <file>svg/close-svgrepo-com.svg</file>
+        <file>svg/cloud-svgrepo-com.svg</file>
+        <file>svg/download-svgrepo-com.svg</file>
+        <file>svg/drag-svgrepo-com.svg</file>
+        <file>svg/eraser-svgrepo-com.svg</file>
+        <file>svg/heart-svgrepo-com.svg</file>
+        <file>svg/home-svgrepo-com.svg</file>
+        <file>svg/link-svgrepo-com.svg</file>
+        <file>svg/mail-svgrepo-com.svg</file>
+        <file>svg/new-file-svgrepo-com.svg</file>
+        <file>svg/pause-svgrepo-com.svg</file>
+        <file>svg/pencil-svgrepo-com.svg</file>
+        <file>svg/person-svgrepo-com.svg</file>
+        <file>svg/phone-svgrepo-com.svg</file>
+        <file>svg/play-svgrepo-com.svg</file>
+        <file>svg/print-svgrepo-com.svg</file>
+        <file>svg/save-svgrepo-com.svg</file>
+        <file>svg/scissors-svgrepo-com.svg</file>
+        <file>svg/search-svgrepo-com.svg</file>
+        <file>svg/select-svgrepo-com.svg</file>
+        <file>svg/setting-svgrepo-com.svg</file>
+        <file>svg/shapes-svgrepo-com.svg</file>
+        <file>svg/sun-svgrepo-com.svg</file>
+        <file>svg/trash-svgrepo-com.svg</file>
+        <file>svg/unlock-svgrepo-com.svg</file>
+        <file>svg/upload-svgrepo-com.svg</file>
+        <file>svg/wifi-svgrepo-com.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PizzaOrder</class>
+ <widget class="QMainWindow" name="PizzaOrder">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>503</width>
+    <height>818</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>PizzaOrder</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#{
+	background-color: white;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="lbl_header">
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Pizza Ordering Application</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="group_info">
+      <property name="font">
+       <font>
+        <pointsize>21</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>Personal Information</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="txt_street">
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#txt_street{
+	padding: 6px 0px;
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	font: 13px;
+	border-style: solid;
+	border-radius: 5px;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_name">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Name *</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="3">
+        <widget class="QLineEdit" name="txt_name">
+         <property name="styleSheet">
+          <string notr="true">#txt_name{
+	padding: 6px 0px;
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	font: 13px;
+	border-style: solid;
+	border-radius: 5px;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="txt_city">
+         <property name="styleSheet">
+          <string notr="true">#txt_city{
+	padding: 6px 0px;
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	font: 13px;
+	border-style: solid;
+	border-radius: 5px;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="lbl_postal">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Postal Code *</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_city">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>City *</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="txt_apt">
+         <property name="styleSheet">
+          <string notr="true">#txt_apt{
+	padding: 6px 0px;
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	font: 13px;
+	border-style: solid;
+	border-radius: 5px;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="txt_postal">
+         <property name="styleSheet">
+          <string notr="true">#txt_postal{
+	padding: 6px 0px;
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	font: 13px;
+	border-style: solid;
+	border-radius: 5px;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="lbl_apt">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Apt. Number</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lbl_street">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Street *</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>*Required</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="group_size">
+      <property name="font">
+       <font>
+        <pointsize>21</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Select Size of Pizza</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QRadioButton" name="rd_small">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Small</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rd_medium">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin-top: 15px;</string>
+         </property>
+         <property name="text">
+          <string>Medium</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rd_large">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin-top: 15px;</string>
+         </property>
+         <property name="text">
+          <string>Large</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="group_toppings">
+      <property name="font">
+       <font>
+        <pointsize>21</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string>Select Toppings</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCheckBox" name="ck_ham">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ham</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="ck_pepperoni">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin-top: 10px;</string>
+         </property>
+         <property name="text">
+          <string>Pepperoni</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="ck_peppers">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin-top: 10px;</string>
+         </property>
+         <property name="text">
+          <string>Green Peppers</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="ck_mushroom">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin-top: 10px;</string>
+         </property>
+         <property name="text">
+          <string>Mushroom</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="ck_pineapple">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin-top: 10px;</string>
+         </property>
+         <property name="text">
+          <string>Pineapple</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="ck_onion">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin-top: 10px;</string>
+         </property>
+         <property name="text">
+          <string>Onion</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="ck_artichoke">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin-top: 10px;</string>
+         </property>
+         <property name="text">
+          <string>Artichoke</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="ck_olive">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin-top: 10px;</string>
+         </property>
+         <property name="text">
+          <string>Black Olive</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="ck_cheese">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin-top: 10px;</string>
+         </property>
+         <property name="text">
+          <string>Extra Cheese</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item alignment="Qt::AlignLeft">
+       <widget class="QPushButton" name="btn_order">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btn_order {
+    background-color: rgb(255, 147, 0);
+	width: 109px;
+	height: 40px;
+	border-style: solid;
+	border-radius: 20px;
+	font: bold 14px;
+	color: white;
+}
+QPushButton#btn_order:pressed {
+    background-color: rgba(255, 147, 0, 204);
+    border-style: solid;
+}</string>
+        </property>
+        <property name="text">
+         <string>Order Now</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_cancel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btn_cancel {
+    background-color: rgb(255, 255, 255);
+	width: 126px;
+	height: 38px;
+	border-style: inset;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 20px;
+	font: 15px;
+	color: black;
+}
+QPushButton#btn_cancel:pressed {
+    color: rgb(145, 145, 145);
+    border-style: inset;
+	border-color: rgb(145, 145, 145);
+}</string>
+        </property>
+        <property name="text">
+         <string>Cancel Order</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item alignment="Qt::AlignLeft">
+       <widget class="QPushButton" name="btn_reset">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btn_reset {
+   	background: none;
+	color: #3D8BFD;
+	border: none;
+}
+QPushButton#btn_reset:pressed {
+   	background: none;
+	color: #005fc9;
+}</string>
+        </property>
+        <property name="text">
+         <string>Reset all selections</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>503</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>txt_name</tabstop>
+  <tabstop>txt_street</tabstop>
+  <tabstop>txt_apt</tabstop>
+  <tabstop>txt_city</tabstop>
+  <tabstop>txt_postal</tabstop>
+  <tabstop>rd_small</tabstop>
+  <tabstop>rd_medium</tabstop>
+  <tabstop>rd_large</tabstop>
+  <tabstop>ck_pepperoni</tabstop>
+  <tabstop>ck_ham</tabstop>
+  <tabstop>ck_peppers</tabstop>
+  <tabstop>ck_mushroom</tabstop>
+  <tabstop>ck_pineapple</tabstop>
+  <tabstop>ck_onion</tabstop>
+  <tabstop>ck_artichoke</tabstop>
+  <tabstop>ck_olive</tabstop>
+  <tabstop>ck_cheese</tabstop>
+  <tabstop>btn_order</tabstop>
+  <tabstop>btn_cancel</tabstop>
+  <tabstop>btn_reset</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,49 @@
+BTH545
+Workshop 2 Reflection
+
+amerzanian@myseneca.ca
+060207024
+
+
+NOTE:
+PLEASE NOTE I HAVE PROVIDED SOURCE CODE IN THIS ZIP SO THAT YOU CAN VERIFY THAT MY PROGRAM WILL ACTUALLY WORK. THIS IS BECAUSE, AS YOU KNOW, I HAVE BEEN RUNNING INTO ISSUES WITH DEPLOYING MY APPLICATIONS FROM MY arm64 SYSTEM FOR YOUR x86_64 SYSTEM.
+
+THANK YOU
+
+
+
+1. What is the function of the meta object compiler?
+   
+   The meta object compiler is a pre-compiler for Qt C++ extensions.
+   It works with the Q_OBJECT macro that we need in our class declaration in the header files of our QWidgets. 
+   It compiles the C++ source code with the macros into a new source file with necessary code to make extensions 
+   such as slots and signals to work with the Clang compiler.
+
+2. When you connect a signal to a slot, you use the syntax &QPushButton::clicked. Explain what this does.
+
+   A signal is like an event and a slot is like an event handler. QPushButton has a built in signal called 
+   'clicked' which notifies the program and any that a button was clicked. 
+   When we 'connect' signals and slots, we are essentially telling the slot to listen for the signal. 
+   The slot will execute code if the correct signal is heard. In my Workshop I used a slot called onPlus 
+   and onMinus to perform certain actions when the button were clicked. 
+ 
+3. When you create the push button explain how the parameters for the constructor determine
+that the button will appear on the desktop rather than as a child of another widget.
+
+   A PushButton has two parameter in its constructor: The text value as a string, and a pointer
+   to the parent widget. If we set the pointer to nullptr, the PushButton will appear as the only
+   widget from our application on the desktop, as nullptr tells the compiler that the desktop will
+   be the only parent. 
+
+   Say we create a new QWidget object called ButtonContainer, we can set this QObject's parent to be nullptr,
+   so that it essentially becomes the main window, then we can instantiate a PushButton with a pointer to
+   'this' inside our ButtonContainer, so that now the PushButton is actually a child of ButtonContainer.
+
+4. Explain what happens when you call the .show() method on the push button and give your
+opinion as to why the API was designed to require a show method.
+
+   When the Qt application function is executed via the --return a.exec() call, it loads the widgets
+   into memory. Therefore the application is running successfully. However, for the display to render 
+   the widget we need to run .show() method. I believe this is to provide windowing flexibility along with
+   minimization and maximization methods. Your GUI doesn't always need to be visually rendered for 
+   your software to be running in memory.
